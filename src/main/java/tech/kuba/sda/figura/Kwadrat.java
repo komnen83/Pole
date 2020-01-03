@@ -1,17 +1,15 @@
-package tech.kuba.sda;
+package tech.kuba.sda.figura;
 
-public class Kwadrat {
+import tech.kuba.sda.figura.Figura;
+
+public class Kwadrat implements Figura {
    private int a;
 
     public Kwadrat(int a) {
         this.a = a;
     }
 
-    public int getA() {
-        return a;
-    }
-
-    double obliczPowierzchnie() {
+    public double obliczPowierzchnie() {
         return a * a;
     }
 

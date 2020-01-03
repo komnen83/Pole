@@ -1,18 +1,15 @@
-package tech.kuba.sda;
+package tech.kuba.sda.figura;
 
-public class Kolo {
+import tech.kuba.sda.figura.Figura;
+
+public class Kolo implements Figura {
     private int promien;
 
     public Kolo(int promien) {
         this.promien = promien;
     }
 
-    public int getPromien() {
-        return promien;
-    }
-
-
-    double obliczPowierzchnie() {
+    public double obliczPowierzchnie() {
         return Math.PI * (promien * promien);
     }
 

@@ -1,6 +1,8 @@
-package tech.kuba.sda;
+package tech.kuba.sda.figura;
 
-public class Prostokat {
+import tech.kuba.sda.figura.Figura;
+
+public class Prostokat implements Figura {
     private int a;
     private int b;
 
@@ -9,15 +11,7 @@ public class Prostokat {
         this.b = b;
     }
 
-    public int getA() {
-        return a;
-    }
-
-    public int getB() {
-        return b;
-    }
-
-    double obliczPowierzchnie() {
+    public double obliczPowierzchnie() {
         return a * b;
     }
 
